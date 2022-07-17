@@ -1,0 +1,13 @@
+{
+  "name": "p5-typescript-starter",
+  "version": "1.0.0",
+  "scripts": {
+    "watch": "tsc --watch",
+    "server": "yarn browser-sync start --server -w"
+  },
+  "devDependencies": {
+    "@types/p5": "^1.4.2",
+    "browser-sync": "^2.27.10",
+    "typescript": "^4.8.0-dev.20220715"
+  }
+}
