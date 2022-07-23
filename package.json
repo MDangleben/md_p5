@@ -2,12 +2,14 @@
   "name": "p5-typescript-starter",
   "version": "1.0.0",
   "scripts": {
-    "watch": "tsc --watch",
-    "server": "yarn browser-sync start --server -w"
+    "start": "run-p start-compile start-run",
+    "start-compile": "tsc --watch",
+    "start-run": "browser-sync start --server -w"
   },
   "devDependencies": {
     "@types/p5": "^1.4.2",
     "browser-sync": "^2.27.10",
+    "npm-run-all": "^4.1.5",
     "typescript": "^4.8.0-dev.20220715"
   }
 }
